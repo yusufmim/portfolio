@@ -9,11 +9,12 @@ html,body {
     box-sizing: border-box;  /* Include padding and borders in width/height calculation */
     overflow-x: hidden;      
     line-height: 1.5;
-    background: linear-gradient(45deg, #28282b, #343434, #353935);
+    background: #F8F9FA;
+   /* background: linear-gradient(45deg, #28282b, #343434, #353935);*/
   background-repeat: no-repeat;
   background-attachment: fixed; /* Makes the gradient stay in place when scrolling */
   background-size: cover;
-  color: #ffffff; /* dark gray for text */
+  color: #212529; /* dark gray for text */
 }
 
 
@@ -25,7 +26,7 @@ html,body {
   margin: 0;
   padding: 10px 20px; /* Add some spacing around */
   height: 2.7em;
-  background-color: #28282b; /* soft blue */
+  background-color: #212529; /*#282b soft blue */
   color: #FFFFFF;
   list-style: none; /* Remove default list styles */
 }
@@ -35,7 +36,7 @@ html,body {
   height: 60px; /* Increase height */
   width: auto; /* Maintain aspect ratio */
   margin-right: 20px; /* Add spacing between logo and nav items */
-  font-family: "jersey 10", sans-serif;
+  font-family: "Jersey 10", sans-serif;
   font-size: 3.2rem;
   font-weight: 480;
   text-align: center;
@@ -44,8 +45,8 @@ html,body {
   text-decoration: none;
   padding-bottom: 10px;
   letter-spacing: 1px;  
-
-  background: linear-gradient(135deg, #87ceeb, #ffffff);
+  background: #ffd700;
+  /*background: linear-gradient(135deg, #87ceeb, #ffffff);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -205,7 +206,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: #212529;
   padding: 25px;
   width: 100%;
   box-sizing: border-box;
@@ -215,13 +216,13 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -75px;
+  margin-top: -70px;
   align-items: center;
   text-align: center;
-  height: 185px;
+  height: 180px;
   width: 90%;
   max-width: 800px;
-  padding: 20px;
+  padding: 25px;
 }
 
 .text-container span{
@@ -234,6 +235,7 @@ header {
   object-fit: cover;
   border: 3px solid #ffffff;
   border-radius: 50%;
+  margin-top: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   filter: brightness(100%);
   transition: 0.2s ease-in-out;
@@ -241,21 +243,21 @@ header {
 
 .container1 img:hover {
   cursor: pointer;
-  border: 3px solid #87ceeb;
+  border: 3px solid #ffd700;
   filter: brightness(80%);
   transform: scale(1.02);
   transition: 0.2s ease-in-out;
 }
 
 .container1 h2 {
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   margin-bottom: 0.2rem;
 }
 
 .container1 h3 {
   font-style: italic;
-  color: #FFC857;
-  font-size: 1.6rem;
+  color: #212529;
+  font-size: 1.45rem;
   margin: 0.5rem 0;
 }
 
@@ -324,8 +326,8 @@ header {
   justify-content: center;
   text-align: center;
   min-height: 300px;
-background-color: #28282b;
-  color: #FFC857;
+background-color: #d3d3d3;
+  color: #212529;
   padding: 27px;
 }
 
@@ -346,9 +348,10 @@ background-color: #28282b;
     position: relative;
     font-size: 31px;
     margin-bottom: 15px;
+    color: #001F3F;
 }
 .about-me p{
-  color: #ffffff;
+  color: #212529;
 }
 
 .about-me h1::after {
@@ -379,16 +382,17 @@ background-color: #28282b;
   width: 180px;
   height: 50px;
   border-radius: 12px;
-  background-color: #FFC857;
+  background-color: #ffffff;
   color: #1A1A1A;
-  border: 2px solid #1A1A1A;
-  transition: background-color 0.3s ease;
+  /*border: 2px solid #1A1A1A;*/
+  transition: background-color 0.1s ease;
 }
 
 
 .button-container button:hover{
-  background-color: #1A1A1A;
-  color: #FFC857;  
+  background-color: #ffffff;
+  color: #0066cc;  
+  filter: brightness(96%);
   transition: background-color 0.4s ease-in-out;
 }
 
@@ -447,7 +451,7 @@ background-color: #28282b;
 .left-grid h1{
   display: inline-block; /* Makes the border fit the width of the text */
     position: relative;
-  color: #FFC857;
+  color: #001F3F;
   margin-bottom: 10px;
 }
 .left-grid h1::after{
@@ -463,7 +467,7 @@ background-color: #28282b;
 
 .left-grid p {
   font-size: 21px;
-  color: #ffffff;
+  color: #212529;
 }
 .left-grid-bc{
   display: flex;
@@ -482,15 +486,14 @@ background-color: #28282b;
   width: 145px;
   height: 50px;
   border-radius: 12px;
-  background-color: #FFC857;
-  color: #1A1A1A;
-  border: 2px solid #1A1A1A;
+  background-color: #d3d3d3;
+  color: #212529;
 }
 
 .left-grid button:hover{
-  color: #FFC857;
-  background-color:#1A1A1A ;
-  transition: background-color 0.3s ease-in-out;
+  color: #0066cc;  
+  filter: brightness(96%);
+  transition: background-color 0.1s ease-in-out;
 }
 
 
@@ -507,8 +510,8 @@ background-color: #28282b;
    /*margin: 0;, Remove extra margin */
   /* Subtle border */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for card */
-  background-color: #28282b; /* Card background color */
-  color: #87ceeb; /* Card text color */
+  background-color: #E3F2FD; /* Card background color */
+  color: #001F3F; /* Card text color */
   text-align: center;
   border: 1px solid #1A1A1A;
   border-radius: 20px; /* Rounded corners */
@@ -517,7 +520,7 @@ background-color: #28282b;
 
 .card i {
   margin-bottom: 10px;
-  color: #87ceeb;
+  color: #001F3F;
 }
 
 .card h2 {
@@ -527,7 +530,7 @@ background-color: #28282b;
 
 .card p {
   font-size: 14.5px;
-  color: #FFFFFF;
+  color: #212529;
 }
 
 .card:hover {
@@ -599,7 +602,7 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 /*===========PORTFOLIO SECTION=========*/
 
 .portfolio-container{
-  background-color: #28282b;
+  background-color: #d3d3d3;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -609,10 +612,14 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   text-decoration: none;
 }
 .portfolio-container h1{
-  color: #FFC857;
+  color: #001F3F;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.portfolio-link a {
+text-decoration: none;
+color: #001F3F;
 }
 
 
@@ -651,7 +658,7 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   height: 12px;
   width: 12px;
   margin: 0 5px;
-  background-color: #ddd;
+  background-color: #353535;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.3s ease;
@@ -659,7 +666,7 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .dot.active {
-  background-color: #003399;
+  background-color: #ffd700;
 }
 
 .fade {
@@ -766,11 +773,11 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 
 .screen {
   position: relative;
-  background: #28282b;
+  background: #a9a9a9;
   border-radius: 17px;
-  border: 2px solid #87ceeb;
+  /*border: 2px solid #87ceeb;*/
   height: 60vh;
-  color: #87ceeb;
+  color: #001F3F;
 }
 
 .screen:after {
@@ -805,7 +812,7 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #87ceeb;
+  color: #001F3F;
   font-size: 27px;
 }
 
@@ -817,13 +824,13 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   bottom: -10px;
   width: 25px;
   height: 4px;
-  background: #FFC857;
+  background: #0066cc;
 }
 
 .app-contact {
   margin-top: auto;
   font-size: 16px;
-  color: #87ceeb;
+  color: #001F3F;
 }
 .app-form {
   font-family: "Montserrat", serif;
@@ -848,16 +855,16 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   background: none;
   border: none;
   border-bottom: 1px solid #000;
-  color: #FFC857;
+  color: #001F3F;
   font-family: "Montserrat", serif;
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase;
   outline: none;
   transition: border-color .2s;
 }
 
 .app-form-control::placeholder {
-  color: #87ceeb;
+  color: #212529;
 }
 
 .app-form-control:focus {
@@ -865,9 +872,9 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .app-form-button {
-  background: none;
+  background: #ffffff;
   border: 1px solid #000;
-  color: #87ceeb;
+  color: #001F3F;
   font-family: "Montserrat", serif;
   font-size: 14px;
   padding: 5px;
@@ -877,8 +884,9 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .app-form-button:hover {
-  color: #87ceeb;
-  background-color: #000;
+  color: #212529;
+  background-color: #ffffff;
+  filter: brightness(90%);
 }
 
 
@@ -887,7 +895,7 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 
 
 .footer {
-  background-color: #28282b;
+  background-color: #212529;
   color: #ffffff;
   padding: 40px 20px;
   text-align: center;
